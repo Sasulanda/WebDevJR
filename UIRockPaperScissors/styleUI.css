@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #0424D9;
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: #031CA6;
+    width: 1000px;
+    height: 500px;
+    border: solid #05F2F2 10px;
+    border-radius: 5px;
+}
+/*ARRIBA */
+.ui {
+    width: 1000px;
+    height: 250px;
+    display: flex;
+}
+
+.player {
+    width: 250px;
+    height: 250px;
+    background: url(../Imagenes/player.png) no-repeat center center / cover;
+}
+
+.score {
+    width: 500px;
+    height: 250px;
+    background-color: #F2308B;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+    border-left: solid #F2B705 5px;
+    border-right: solid #F2B705 5px;
+}
+
+.bot {
+    width: 250px;
+    height: 250px;
+    background: url(../Imagenes/robot.png) no-repeat center center / cover;
+}
+
+/*ABAJO*/
+.selection {
+    width: 1000px;
+    height: 250px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top:solid #05F2F2 10px;
+
+}
+.rock {
+    width: 200px;
+    height: 200px;
+    background: url(../Imagenes/rock2.png) no-repeat center center / contain;
+}
+
+.paper {
+    width: 200px;
+    height: 200px;
+    background: url(../Imagenes/paper2.png) no-repeat center center / contain;
+}
+
+.scissors {
+    width: 200px;
+    height: 200px;
+    background: url(../Imagenes/scissors2.png) no-repeat center center / contain;
+}
+
+/*SCOREBOARD*/
+
+.playerSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    padding-top: 30px;
+}
+
+.playerText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.playerScore {
+    padding-top: 60px;
+}
+
+.botSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 250px;
+    padding-top: 30px;
+}
+
+.botText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.botScore {
+    padding-top: 60px;
+}

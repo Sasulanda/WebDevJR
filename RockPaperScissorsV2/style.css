@@ -1,0 +1,151 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(desktop-wallpaper-wobbling-arcade-motif-patterns.jpg);
+}
+
+header {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(102, 39, 35, 0.09);
+}
+
+header h2 {
+    margin: 20px 0px;
+    padding: 20px;
+    font-family: 'Stick No Bills', sans-serif;
+    font-size: 4rem;
+    text-align: center;
+    border: #b42222 solid 7px;
+}
+
+.mainGame {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ui {
+    width: 600px;
+    height: 200px;
+    display: flex;
+}
+
+.player {
+    width: 200px;
+    background-image: url(../imagenes/player.png);
+    background-size: 215px;
+    background-repeat: no-repeat;
+    margin-right: 15px;
+}
+
+.scorePlayer {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    
+}
+
+
+.vs {
+    width: 100px;
+    height: 70px;
+    align-self: center;
+    background-color: #f33;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    font-family: 'Shadows Into Light', cursive;
+    font-weight: bold;
+
+}
+.scoreBot {
+    width: 50px;
+    height: 50px;
+    align-self: center;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+}
+
+
+.bot {
+    width: 200px;
+    background-image: url(../imagenes/robot.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.selection {
+    width: 600px;
+    height: 150px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: 30px;
+}
+
+.rock {
+    width:150px ;
+    background-image: url(../Imagenes/rock2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #615b5b solid 6px;
+}
+
+.paper {
+    width:150px ;
+    background-image: url(../Imagenes/paper2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #615b5b solid 6px;
+}
+
+.scissors {
+    width:150px ;
+    background-image: url(../Imagenes/scissors2.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    border: #615b5b solid 6px;
+}
+
+.gameText {
+    width: 600px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.robotText {
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+    -webkit-text-stroke: 0.1px #fff;
+}
+
+.wl {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 2rem;
+    font-weight: bold;
+    color: rgb(10, 255, 10);
+}
+
+footer {
+    color: #fff;
+    position: absolute;
+    top: 98%;
+}

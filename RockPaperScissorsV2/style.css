@@ -103,6 +103,14 @@ header h2 {
     background-size: contain;
     background-repeat: no-repeat;
     border: #615b5b solid 6px;
+    animation-duration: .5s;
+}
+
+.rock:hover {
+    width: 170px;
+    height: 170px;
+    box-shadow: 0 0 15px grey;
+    transition: .2s;
 }
 
 .paper {
@@ -111,6 +119,14 @@ header h2 {
     background-size: contain;
     background-repeat: no-repeat;
     border: #615b5b solid 6px;
+    transition: .2s;
+}
+
+.paper:hover {
+    width: 170px;
+    height: 170px;
+    background-size: 170px;
+    box-shadow: 0 0 15px grey;
 }
 
 .scissors {
@@ -119,6 +135,14 @@ header h2 {
     background-size: contain;
     background-repeat: no-repeat;
     border: #615b5b solid 6px;
+}
+
+.scissors:hover {
+    width: 170px;
+    height: 170px;
+    background-size: 170px;
+    box-shadow: 0 0 15px grey;
+    transition: .2s;
 }
 
 .gameText {

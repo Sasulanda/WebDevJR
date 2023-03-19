@@ -6,21 +6,33 @@ let contadorP = document.querySelector('.scorePlayer');
 let contadorB = document.querySelector('.scoreBot');
 
 // variables lógica juego
-let puntosPlayer = 0
-let puntosBot = 0
-const lista = ['rock', 'paper', 'scissors']
+let puntosPlayer = 0;
+let puntosBot = 0;
+const lista = ['rock', 'paper', 'scissors'];
+let playerSelection = null;
 
-// BO5
+// event listeners for player selections
+rock.addEventListener('click', () => {
+  playerSelection = 'rock';
+  playRound();
+});
 
-// Cuando el contador de alguno de los jugadores
-// llegue a 3, el juego se termina
+paper.addEventListener('click', () => {
+  playerSelection = 'paper';
+  playRound();
+});
 
-while(puntosPlayer < 3 && puntosBot < 3){
+scissors.addEventListener('click', () => {
+  playerSelection = 'scissors';
+  playRound();
+});
+
+// function to play a round
+function playRound() {
   let botSelection = lista[Math.floor(Math.random() * lista.length)];
-  let playerSelection = lista[Math.floor(Math.random() * lista.length)];
   
   if (playerSelection === botSelection){
-    continue
+    return;
   }
 
   else if(playerSelection === "rock" && botSelection === 'scissors'||
@@ -34,13 +46,12 @@ while(puntosPlayer < 3 && puntosBot < 3){
           botSelection === "scissors" && playerSelection === 'paper') {
             puntosBot++;
   }
-  contadorP.textContent = `${puntosPlayer}` ;
-  contadorB.textContent = `${puntosBot}` ;
-};
-
-
-
-rock.addEventListener('click', () => {
-    contadorP.textContent = `${puntosPlayer}` ;
-  });
-
+  
+  contadorP.textContent = `${puntosPlayer}`;
+  contadorB.textContent = `${puntosBot}`;
+  
+  // check for game over
+  if (puntosPlayer >= 3 || puntosBot >= 3) {
+    alert("Game over!");
+  }
+}

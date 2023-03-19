@@ -4,6 +4,7 @@ let paper = document.querySelector('.paper');
 let scissors = document.querySelector('.scissors');
 let contadorP = document.querySelector('.scorePlayer');
 let contadorB = document.querySelector('.scoreBot');
+let playAgain = document.querySelector('.finish')
 
 // variables lógica juego
 let puntosPlayer = 0;
@@ -52,6 +53,6 @@ function playRound() {
   
   // check for game over
   if (puntosPlayer >= 3 || puntosBot >= 3) {
-    alert("Game over!");
+    playAgain.style.display = 'flex';
   }
 }

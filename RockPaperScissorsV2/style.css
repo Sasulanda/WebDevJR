@@ -173,3 +173,25 @@ footer {
     position: absolute;
     top: 98%;
 }
+
+.finish {
+    position: absolute;
+    width: 100vw;
+    height: 79vh;
+    background-color: rgba(255, 51, 51, 0.55);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
+    font-weight: 1000;
+    display: none;
+
+}
+
+.finish p {
+    background-color: rgba(255, 51, 51, 0.9);
+    border-radius: 100px;
+    padding: 250px;
+    margin-bottom: 120px;
+    box-shadow: 0 0 40px black;
+}

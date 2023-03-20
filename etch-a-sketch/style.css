@@ -1,0 +1,101 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url(whiteTexture.jpg);
+    background-size: cover;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+header {
+    display: flex;
+    height: 10vh;
+    background-color: rgba(0, 0, 0, 0.15);
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    color: #fff;
+    -webkit-text-stroke:0.1px #663939;
+}
+/*MAIN CONTENT*/
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.resolution {
+    margin-top: 30px;
+}
+
+.pall {
+    margin: 0 10px;
+    padding: 1rem 2rem;
+    background-color: rgb(235, 225, 225);
+    border-width: 2px;
+    border-color: #663939;
+    border-radius: 4px;
+    font-size: 1.5rem;
+}
+
+.pall:hover {
+    box-shadow: 0 0 2px brown;
+    cursor: pointer;
+}
+
+/*El lienso*/
+
+.paper {
+    margin-top: 30px;
+    width: 60vh;
+    height: 60vh;
+    background-color: #232323;
+}
+
+/*Herramientas*/
+.tools {
+    margin-top: 10px;
+    width: 60vh;
+    height: 50px;
+    background-color: red;
+    display: flex;
+    justify-content: space-between;
+}
+
+.colors {
+    display: flex;
+    align-items: center;
+}
+.colores {
+    width: 40px;
+    height: 40px;
+    background-color: #232323;
+    margin-right: 8px;
+    border-radius: 50%;
+}
+
+.color1 {
+    background-color: #232323;
+}
+.color2 {
+    background-color: #ff0000;
+}
+
+.color3 {
+    background-color: #fffb00;
+}
+
+.color4 {
+    background-color: #00ff00;
+}
+.color5 {
+    background-color: #00ccff;
+}
+.rubber {
+    background-image: url(rubber.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}

@@ -50,12 +50,23 @@ header {
 
 .paper {
     margin-top: 30px;
-    width: 60vh;
-    height: 60vh;
-    background-color: #fff;
+    width: 100%;
+    height: 1000px;
+    max-width: 60vh; /* Will be AT MOST 60vh wide */
+    max-height: 60vh;
+    background-color: #d4d4d4;
     border-width: 2px;
     border-color: #232323;
     border-style: solid;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    gap: 2px;
+}
+
+
+.cuadraditos {
+    background-color: #fbfbfb;
 }
 
 /*Herramientas*/
@@ -107,6 +118,7 @@ header {
 
 }
 .rubber {
+    margin-left: 10px;
     background-image: url(rubber.png);
     background-repeat: no-repeat;
     background-size: cover;

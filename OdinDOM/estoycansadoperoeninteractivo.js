@@ -10,7 +10,7 @@ let lastp = document.createElement('p')
 
 
 parrafo.style.cssText = 'color:red'
-parrafo.textContent = 'Hey I’m red!'
+parrafo.textContent = 'Hey Im red!'
 container.appendChild(parrafo);
 
 h3h.style.cssText = 'color:blue'

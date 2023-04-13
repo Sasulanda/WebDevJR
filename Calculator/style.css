@@ -1,0 +1,54 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+
+body {
+    background-image: url(../Imagenes/white-aes.webp);
+    background-size: cover;
+}
+
+header {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 4rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.cal {
+    font-size: 2rem;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    margin-top: 10vh;
+}
+.calculator {
+    display: flex;
+    height: 60vh;
+    width: 60vw;
+    max-width: 400px;
+    background-color: black;
+    border-radius: 5%;
+    flex-direction:column;
+}
+
+.screen {
+    background-color: green;
+    min-height: 10vh;
+    margin: 3vh;
+    border-radius: 2%;
+}
+
+.botones {
+    display: flex;
+    background-color: grey;
+    min-height: 36vh;
+    margin: 3vh;
+    border-radius: 2%;
+}

@@ -47,8 +47,18 @@ main{
 
 .botones {
     display: flex;
+    flex-direction: column;
+    padding: 10px;
     background-color: grey;
     min-height: 36vh;
     margin: 3vh;
     border-radius: 2%;
+}
+
+.rows {
+    display: flex;
+}
+
+.bt {
+    padding: 10px;
 }
